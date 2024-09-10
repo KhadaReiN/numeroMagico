@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<body>
+        
+    <section class="content_box">
+        <h1>Bienvenido al juego del número mágico</h1>
+        <h3>estoy pensando en un número entre 1 y 100...¿Podrás adivinar cuál es?</h3>
+        <div id="attemp-counter">
+            <p>tienes </p><p id="attemps">10</p><p> intentos</p>
+        </div>
+        <form id="form" action="">
+            <label for="numberToValidate"></label>
+            <input type="number" name="number_in" id="numberToValidate">
+            <button type="submit" id="button">Probar</button>
+              
+        </form>
+        
+        <p id="message"></p>
+        <button id="restart">Jugar de Nuevo</button>
+    </section>
+
+    <div class="content_box">
+        <p>Intentos Anteriores:</p>
+        <p id="listaIntentos"></p>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
